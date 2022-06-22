@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="3" parallel="tests" name="Failed suite [pCloudy Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="Test1(failed)">
+    <parameter name="deviceName" value="Google"/>
+    <classes>
+      <class name="com.pCloudy.testNG.Runner">
+        <methods>
+          <include name="Test"/>
+          <include name="setUpSuite"/>
+          <include name="prepareTest"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- com.pCloudy.testNG.Runner -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [pCloudy Suite] -->
